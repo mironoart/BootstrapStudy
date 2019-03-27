@@ -175,42 +175,67 @@
 				<div class="card ">
 					<h3 class="card-header bg-warning text-white">Reserve Table</h3>
 					<div class="card-body">
-						<dl class="row">
-							<dt class="col-12 col-md-3">Number of Guests</dt>
-							<dd class="col-12 col-md-9">
-								<input type="radio" aria-label="1" /> 1
-								<input type="radio" aria-label="2" /> 2
-								<input type="radio" aria-label="3" /> 3
-								<input type="radio" aria-label="4" /> 4
-								<input type="radio" aria-label="5" /> 5
-								<input type="radio" aria-label="6" /> 6
-							</dd>
-
-							<dt class="col-12 col-md-3">Date and Time</dt>
-							<dd class="col-12 col-md-4">
-								<input
-									type="text"
-									class="form-control"
-									id="date"
-									name="Date"
-									placeholder="Date"
-								/>
-							</dd>
-							<dd class="col-12 col-md-4">
-								<input
-									type="text"
-									class="form-control"
-									id="Time"
-									name="time"
-									placeholder="Time"
-								/>
-							</dd>
-
-							<dt class="col-0 col-md-3"></dt>
-							<dd class="col-12 col-md-4">
-								<button type="submit" class="btn btn-primary">Reserve</button>
-							</dd>
-						</dl>
+							<form>
+									<fieldset class="form-group ">
+											<div class="row">
+													<div class="col-lg-2 col-form-label">Number of Guests</div>
+													<div class="col-lg-10">
+															<div class="form-check form-check-inline">
+																	<input class="form-check-input" type="radio" name="guests" id="guests-1" value="1">
+																	<label class="form-check-label" for="guests-1">
+																			1
+																	</label>
+															</div>
+															<div class="form-check form-check-inline">
+																	<input class="form-check-input" type="radio" name="guests" id="guests-2" value="2">
+																	<label class="form-check-label" for="guests-2">
+																			2
+																	</label>
+															</div>
+															<div class="form-check form-check-inline">
+																	<input class="form-check-input" type="radio" name="guests" id="guests-3" value="3">
+																	<label class="form-check-label" for="guests-3">
+																			3
+																	</label>
+															</div>
+															<div class="form-check form-check-inline">
+																	<input class="form-check-input" type="radio" name="guests" id="guests-4" value="4">
+																	<label class="form-check-label" for="guests-4">
+																			4
+																	</label>
+															</div>
+															<div class="form-check form-check-inline">
+																	<input class="form-check-input" type="radio" name="guests" id="guests-5" value="5">
+																	<label class="form-check-label" for="guests-5">
+																			5
+																	</label>
+															</div>
+															<div class="form-check form-check-inline">
+																	<input class="form-check-input" type="radio" name="guests" id="guests-6" value="6">
+																	<label class="form-check-label" for="guests-6">
+																			6
+																	</label>
+															</div>
+													</div>
+											</div>
+									</fieldset>
+									<fieldset class="form-group">
+											<div class="row">
+													<div class="col-lg-2 col-form-label">Date and Time</div>
+													<div class="col-lg-5">
+															<input type="text" class="form-control" id="table-date" name="date" placeholder="Date">                                    
+													</div>
+													<div class="col-lg-5">
+															<input type="text" class="form-control" id="table-time" name="time" placeholder="Time">                                    
+													</div>
+											</div>
+									</fieldset>
+									<div class="row">
+											<div class="col-lg-10 offset-lg-2">
+													<button type="submit" class="btn btn-lg btn-primary">Reserve</button>
+											</div>
+									</div>
+							</form>
 					</div>
 				</div>
 			</div>
