@@ -52,3 +52,13 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 100; }
+
+.modal-content .modal-header {
+  background: #512da8;
+  color: floralwhite; }
+
+.modal-content .modal-body {
+  background: #d1c4e9; }
+
+.modal-content .cancelButton {
+  color: floralwhite; }
