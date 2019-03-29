@@ -4,10 +4,12 @@
 	"description": "This is a website for Ristorante Con Fusion",
 	"main": "index.html",
 	"scripts": {
-		"start": "npm run lite",
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npm run watch:all",
 		"lite": "lite-server",
-		"scss": "node-sass -o css/ css/"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"scss": "node-sass -o css/ css/",
+		"watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+		"watch:all": "concurrently  \"npm run watch:scss\" \"npm run lite\""
 	},
 	"author": "",
 	"license": "ISC",
@@ -17,9 +19,11 @@
 	"dependencies": {
 		"bootstrap": "^4.0.0",
 		"bootstrap-social": "5.1.1",
+		"concurrently": "^4.1.0",
 		"font-awesome": "4.7.0",
 		"jquery": "^3.3.1",
 		"node-sass": "^4.11.0",
+		"onchange": "^5.2.0",
 		"popper.js": "^1.12.9"
 	}
 }
